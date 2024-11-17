@@ -70,8 +70,8 @@ int main()
     {
 
         cout << "Enter right option" << endl;
+        return 1;
     }
-
 
     a1->voice();
 
