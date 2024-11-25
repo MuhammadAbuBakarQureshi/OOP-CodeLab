@@ -8,17 +8,12 @@ private:
 
     int data;
 
-private:
+public:
+
+    Database(int d): data(d) {}
 
     friend int get_data(Database obj);
-
-    int get(Database d);
 };
-
-int Database::get(Database d){
-
-    return d.data;
-}
 
 int get_data(Database obj){
     
@@ -28,9 +23,9 @@ int get_data(Database obj){
 int main()
 {
 
-    Database d1;
+    Database d1(10);
 
-    get_data(d1);
+    cout << get_data(d1) << endl;
 
     return 0;
 }
