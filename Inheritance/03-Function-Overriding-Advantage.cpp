@@ -38,6 +38,8 @@ public:
 int main()
 {
 
+    animal *a2 = new cat();
+
     animal *a1;
 
     cout << "1. Cat" << endl
